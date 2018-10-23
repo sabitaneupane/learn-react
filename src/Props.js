@@ -6,17 +6,26 @@ class Props extends Component {
   render() {
     return (
       <div className="container"> 
-        <p>
+        <div class="row">
+          <div class="col-xs-6">
           <b> Movie name: </b> 
              
-             {/* Adding movie title using Props */}
+             {/* Adding movie title using Props attribute */}
              {this.props.title}
             <br/> 
           <b> Movie Genre: </b> 
 
-             {/* Adding movie genre using Props */}
+             {/* Adding movie genre using Props attribute */}
             {this.props.genre}
-        </p>
+          </div> 
+
+          <div class="col-xs-6">
+            Rating: 
+
+             {/* Adding movie rating using Props children */}
+             {this.props.children}
+          </div>
+        </div>
         <hr/>
       </div>
     );
@@ -27,10 +36,20 @@ ReactDOM.render(
   <div>
 
      {/* Passing movie title and genre using attribute */}
-     
-    <Props title="The social networking" genre="Documentary"/>
-    <Props title="Avatar" genre="Sci-fiction"/>
-    <Props title="Titanic" genre="Drama, Romantic"/>
+     {/* Passing movie rating using children */}
+
+    <Props title="The social networking" genre="Documentary"> 
+      8
+    </Props>
+
+    <Props title="Avatar" genre="Sci-fiction">
+     9
+    </Props>
+
+    <Props title="Titanic" genre="Drama, Romantic">
+     7
+    </Props>
+
   </div>, 
   document.getElementById('root')
 );
