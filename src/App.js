@@ -4,16 +4,16 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div class="container"> 
-      	<div class="row">
-	      <div class="col-md-8"> 
-	      	...
+      <div className="container"> 
+      	<div className="row">
+	      <div className="col-md-6 col-xs-6"> 
+	      	left
 	      </div>
 	      
-	      <div class="col-md-4">
-	      	...
+	      <div className="col-md-6 col-xs-6">
+	      	 right
 	      </div>
-      	</div>
+      	</div> 
       </div>
     );
   }
