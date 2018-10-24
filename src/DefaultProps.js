@@ -15,8 +15,10 @@ DefaultProps.defaultProps = {
 
 ReactDOM.render(
   <div>
+    {/* Default button text*/}
   	<DefaultProps />
 
+    {/* Simple button text*/}
   	<DefaultProps text="A Simple Button"/>
   </div>
   , 
