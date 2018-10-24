@@ -6,7 +6,7 @@ class State extends Component{
 	render(){
 		return (
 			<div>
-
+				<button> Click me </button>
 			</div>
 		);
 	}
