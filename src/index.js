@@ -6,6 +6,7 @@ import './index.css';
 import App from './App';
 import Props from './Props';
 import State from './State';
+import DefaultProps from './DefaultProps';
 import * as serviceWorker from './serviceWorker';
 
 
