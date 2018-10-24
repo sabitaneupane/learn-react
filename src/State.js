@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 
 
 class State extends Component{
+	UpdateClickCount(){
+		alert('hey');
+	}
+
 	render(){
 		return (
 			<div>
-				<button> Click me </button>
+				<button onClick={() => this.UpdateClickCount()}> Click me </button>
 			</div>
 		);
 	}
