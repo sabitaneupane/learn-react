@@ -15,6 +15,9 @@ import SetStateComponent from './setStateComponent';
 
 import RefsClass from './Refs';
 
+import Map from './Map';
+
+
 import * as serviceWorker from './serviceWorker';
 
 
