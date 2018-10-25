@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom';
 
 
 class SetStateComponent extends Component {
+
+	constructor(props){
+		super(props);
+		this.state = { editing:false };
+	}
+
 	edit(){
 		alert('editing');
 	}
