@@ -17,6 +17,7 @@ import RefsClass from './Refs';
 
 import Map from './Map';
 
+import Key from './Key';
 
 import * as serviceWorker from './serviceWorker';
 
