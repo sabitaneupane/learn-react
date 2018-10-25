@@ -6,8 +6,8 @@ class Props extends Component {
   render() {
     return (
       <div className="container"> 
-        <div class="row">
-          <div class="col-xs-6">
+        <div className="row">
+          <div className="col-xs-6">
           <b> Movie name: </b> 
              
              {/* Adding movie title using Props attribute */}
@@ -19,7 +19,7 @@ class Props extends Component {
             {this.props.genre}
           </div> 
 
-          <div class="col-xs-6">
+          <div className="col-xs-6">
             Rating: 
 
              {/* Adding movie rating using Props children */}
