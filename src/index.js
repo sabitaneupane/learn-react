@@ -13,6 +13,8 @@ import State from './State';
 import SetState from './setState';
 import SetStateComponent from './setStateComponent';
 
+import RefsClass from './Refs';
+
 import * as serviceWorker from './serviceWorker';
 
 
