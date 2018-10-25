@@ -8,6 +8,7 @@ class SetStateComponent extends Component {
 		super(props);
 		this.state = { editing:false };
 
+		{/* using bind for edit and save event handler*/}
 		this.edit = this.edit.bind(this);
 		this.save = this.save.bind(this);
 	}
