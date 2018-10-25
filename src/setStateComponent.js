@@ -3,13 +3,21 @@ import ReactDOM from 'react-dom';
 
 
 class SetStateComponent extends Component {
+	edit(){
+		alert('editing');
+	}
+
+	remove(){
+		alert('removing');
+	}
+
 	render(){
 		return(
 			<div className="well">
 				{this.props.children}
 				<br/><br/>
-				<button className="btn btn-primary"> Edit </button>
-				<button className="btn btn-danger"> Remove </button>
+				<button onClick={this.edit} className="btn btn-primary"> Edit </button>
+				<button onClick={this.remove} className="btn btn-danger"> Remove </button>
 			</div>
 		);
 	}
