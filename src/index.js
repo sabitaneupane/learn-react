@@ -11,6 +11,7 @@ import DefaultProps from './DefaultProps';
 
 import State from './State';
 import SetState from './setState';
+import SetStateComponent from './setStateComponent';
 
 import * as serviceWorker from './serviceWorker';
 
