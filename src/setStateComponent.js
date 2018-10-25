@@ -7,18 +7,25 @@ class SetStateComponent extends Component {
 	constructor(props){
 		super(props);
 		this.state = { editing:false };
+
+		this.edit = this.edit.bind(this);
+		this.save = this.save.bind(this);
 	}
 
 	edit(){
-		alert('editing');
+		this.setState({editing: true});
+	}
+
+	save(){
+		this.setState({editing: false});
 	}
 
 	remove(){
 		alert('removing');
 	}
 
-	render(){
-		return(
+	renderNormal(){
+		return (
 			<div className="well">
 				{this.props.children}
 				<br/><br/>
@@ -26,6 +33,24 @@ class SetStateComponent extends Component {
 				<button onClick={this.remove} className="btn btn-danger"> Remove </button>
 			</div>
 		);
+	}
+
+	renderForm(){
+		return (
+			<div className="well">
+				<textarea defaultValue={this.props.children}></textarea>
+				<br/><br/>
+				<button onClick={this.save} className="btn btn-success"> Save </button>
+			</div>
+		);
+	}
+
+	render(){
+		if(!this.state.editing){
+			return this.renderNormal();
+		}else{
+			return this.renderForm();
+		}	
 	}
 }
 
