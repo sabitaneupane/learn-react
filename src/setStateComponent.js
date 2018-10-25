@@ -7,6 +7,9 @@ class SetStateComponent extends Component {
 		return(
 			<div className="well">
 				{this.props.children}
+				<br/><br/>
+				<button className="btn btn-primary"> Edit </button>
+				<button className="btn btn-danger"> Remove </button>
 			</div>
 		);
 	}
