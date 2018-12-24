@@ -19,6 +19,9 @@ import Map from './Map';
 
 import Key from './Key';
 
+import FetchData from './fetchdata';
+
+
 import * as serviceWorker from './serviceWorker';
 
 
