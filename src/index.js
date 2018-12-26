@@ -21,6 +21,8 @@ import Key from './Key';
 
 import FetchData from './fetchdata';
 
+import HandlingData from './handlingdata';
+
 
 import * as serviceWorker from './serviceWorker';
 
