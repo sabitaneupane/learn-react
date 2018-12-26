@@ -24,6 +24,8 @@ import FetchData from './fetchdata';
 import HandlingData from './handlingdata';
 import HandlingEvent from './handlingevent';
 
+import InsertData from './insertdata';
+
 
 import * as serviceWorker from './serviceWorker';
 
