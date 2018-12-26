@@ -17,7 +17,7 @@ class FetchData extends React.Component {
     }
 
     FetchData(){
-      fetch("https://randomuser.me/api/?results=2")
+      fetch("https://randomuser.me/api/?results=2",{ method: 'GET' })
         .then(res => res.json())
         .then(
           (response) => {
