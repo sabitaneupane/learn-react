@@ -25,6 +25,7 @@ import HandlingData from './handlingdata';
 import HandlingEvent from './handlingevent';
 
 import InsertData from './insertdata';
+import UpdateData from './updatedata';
 
 
 import * as serviceWorker from './serviceWorker';
