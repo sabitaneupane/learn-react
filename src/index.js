@@ -22,10 +22,10 @@ import Key from './Key';
 import HandlingData from './handlingDataAndEvent/handlingdata';
 import HandlingEvent from './handlingDataAndEvent/handlingevent';
 
-// import FetchData from './fetchdata';
-// import InsertData from './insertdata';
-// import UpdateData from './updatedata';
-// import DeleteData from './deletedata';
+import FetchData from './crudOperation/fetchdata';
+import InsertData from './crudOperation/insertdata';
+import UpdateData from './crudOperation/updatedata';
+import DeleteData from './crudOperation/deletedata';
 
 
 import * as serviceWorker from './serviceWorker';
