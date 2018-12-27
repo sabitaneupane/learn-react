@@ -27,6 +27,8 @@ import InsertData from './crudOperation/insertdata';
 import UpdateData from './crudOperation/updatedata';
 import DeleteData from './crudOperation/deletedata';
 
+import BindData from './bindData';
+
 
 import * as serviceWorker from './serviceWorker';
 
