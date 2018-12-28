@@ -29,7 +29,7 @@ import './index.css';
 
 // import BindData from './bindData';
 
-import Parent from './component/parentToChild/parent';
+import Parent from './component/parentAndChild/parent';
 
 import * as serviceWorker from './serviceWorker';
 
