@@ -18,13 +18,17 @@ class Child extends Component {
     render() {
       return (
         <div>
-          <h4>Child</h4>
+          <h2>Child</h2>
           <input
             type="text"
+            className="form-control"
             placeholder="type here"
             onChange={this.update}
             value={this.state.fieldVal}
           />
+
+          <p> Value in Child Component State: <b> {this.state.fieldVal} </b> </p>
+
         </div>
       )
     }

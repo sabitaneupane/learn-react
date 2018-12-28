@@ -4,8 +4,8 @@ class OtherChild extends Component {
     render() {
       return (
         <div>
-          <h4>OtherChild</h4>
-          Value in OtherChild Props: {this.props.passedVal}
+          <h2>OtherChild</h2>
+          <p> Value in OtherChild Props: <b> {this.props.passedVal}  </b> </p>
         </div>
       )
     }
