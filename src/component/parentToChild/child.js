@@ -1,19 +1,33 @@
 import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
 
+class Child extends Component {
+    constructor(props) {
+      super(props);
+  
+      this.state = {
+        fieldVal: ""
+      }
+    }
+  
+    update = (e) => {
+      console.log(e.target.value);
+      this.props.onUpdate(e.target.value);
+      this.setState({fieldVal: e.target.value});
+    };
+  
+    render() {
+      return (
+        <div>
+          <h4>Child</h4>
+          <input
+            type="text"
+            placeholder="type here"
+            onChange={this.update}
+            value={this.state.fieldVal}
+          />
+        </div>
+      )
+    }
+  }
 
-class Child extends Component{
-	render(){
-		return(
-			<div className="well">
-				Hey 
-			</div>
-		);
-	}
-
-}
-
-ReactDOM.render(
-	<Child />,
-	document.getElementById('root')
-);
+export default Child;
