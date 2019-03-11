@@ -29,7 +29,10 @@ import './index.css';
 
 // import BindData from './bindData';
 
-import Parent from './component/parentAndChild/parent';
+// import Parent from './component/parentAndChild/parent';
+
+import Posts from './reduxExample/Posts';
+
 
 import * as serviceWorker from './serviceWorker';
 
