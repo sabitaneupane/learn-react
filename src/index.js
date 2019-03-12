@@ -31,7 +31,7 @@ import './index.css';
 
 // import Parent from './component/parentAndChild/parent';
 
-import Posts from './reduxExample/Posts';
+import Posts from './reduxExample/component/Posts';
 
 
 import * as serviceWorker from './serviceWorker';
