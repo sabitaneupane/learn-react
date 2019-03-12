@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
+import PostForm from './PostForm';
 
 class Posts extends Component {
 
@@ -23,6 +23,7 @@ class Posts extends Component {
     render() {
         return (
             <div> 
+                <PostForm/>
                 {
                     this.state.posts.map((data) => {
                         return(
