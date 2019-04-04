@@ -33,8 +33,8 @@ import './index.css';
 
 // import FetchData from './axios/fetchdata';
 // import InsertData from './axios/insertdata';
-import UpdateData from './axios/updatedata';
-// import DeleteData from './axios/deletedata';
+// import UpdateData from './axios/updatedata';
+import DeleteData from './axios/deletedata';
 
 import * as serviceWorker from './serviceWorker';
 

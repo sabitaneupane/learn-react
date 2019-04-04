@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
 
 
 class DeleteData extends React.Component {
@@ -8,7 +9,7 @@ class DeleteData extends React.Component {
   }
 
   DeleteData(){
-      fetch("https://reqres.in/api/users/2", {
+      axios("https://reqres.in/api/users/2", {
         method: 'DELETE'
       }).then(function(response) {
           if (response.status >= 400) {
