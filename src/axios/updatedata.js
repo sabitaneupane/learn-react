@@ -1,11 +1,12 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
 
 class UpdateData extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            name: '',
+            name: 'Test user',
         }
         this.handleSubmit = this.handleSubmit.bind(this)
         this.logChange = this.logChange.bind(this)
@@ -15,25 +16,28 @@ class UpdateData extends Component {
         this.FetchData();
     }
   
+    // FetchData(){
+    //     axios("https://reqres.in/api/users/2",{ method: 'GET' })
+    //       .then(res => {
+    //         this.setState({
+    //           name: res.data.first_name,
+    //           isLoaded: true
+    //         });
+    //           console.log(res.data);
+
+    //       })
+    // } 
+
     FetchData(){
-        fetch("https://reqres.in/api/users/2",{ method: 'GET' })
-          .then(res => res.json())
-          .then(
-            (response) => {
-              this.setState({
-                name: response.data.first_name,
-                isLoaded: true
-              });
-              console.log(response.data);
-            },
-            (error) => {
-              this.setState({
-                isLoaded: true,
-                error
-              });
-            }
-          )
-    } 
+      axios.get("https://reqres.in/api/users/2",{ method: 'GET' })
+      .then(res => {
+        this.setState({
+          name: res.data.first_name,
+          isLoaded: true
+        });
+      })
+    }
+
 
     handleSubmit(event) {
         event.preventDefault()
@@ -44,15 +48,14 @@ class UpdateData extends Component {
 
         console.log(data)
 
-        fetch("https://reqres.in/api/users/2", {
+        axios("https://reqres.in/api/users/2", {
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data)
         })
-        
-        .then(function(response) { return response.json();})
-        .then(function(data) {console.log(data)})
-        .catch(function(err) {console.log(err)});
+        .then(res => {
+            return res.json
+          })
     }
 
     logChange(event) {
@@ -64,7 +67,7 @@ class UpdateData extends Component {
             <div className="container register-form">
                 <form onSubmit={this.handleSubmit} method="POST">
                     <label>Name</label>
-                    <input onChange={this.logChange} className="form-control" value={this.state.name} name='name' />
+                    <input onChange={this.logChange} className="form-control" name='name' />
                     <div className="submit-section">
                         <button className="btn btn-primary">Update</button>
                     </div>
