@@ -29,7 +29,12 @@ import './index.css';
 
 // import BindData from './bindData';
 
-import Parent from './component/parentAndChild/parent';
+// import Parent from './component/parentAndChild/parent';
+
+// import FetchData from './axios/fetchdata';
+// import InsertData from './axios/insertdata';
+// import UpdateData from './axios/updatedata';
+import DeleteData from './axios/deletedata';
 
 import * as serviceWorker from './serviceWorker';
 
