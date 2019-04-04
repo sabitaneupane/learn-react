@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
 
 
 class FetchData extends React.Component {
@@ -17,23 +18,13 @@ class FetchData extends React.Component {
     }
 
     FetchData(){
-      fetch("https://randomuser.me/api/?results=10",{ method: 'GET' })
-        .then(res => res.json())
-        .then(
-          (response) => {
-            this.setState({
-              details: response.results,
-              isLoaded: true
-            });
-            console.log(response.results);
-          },
-          (error) => {
-            this.setState({
-              isLoaded: true,
-              error
-            });
-          }
-        )
+      axios.get("https://randomuser.me/api/?results=10",{ method: 'GET' })
+      .then(res => {
+        this.setState({
+          details: res.data.results,
+          isLoaded: true
+        });
+      })
     }
   
     render() {
