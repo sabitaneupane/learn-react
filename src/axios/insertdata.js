@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
 
 class InsertData extends Component {
     constructor(props) {
@@ -22,13 +23,11 @@ class InsertData extends Component {
 
         console.log(data)
 
-        fetch("https://reqres.in/api/users", {
+        axios("https://reqres.in/api/users", {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data)
         })
-        
-        .then(function(response) { return response.json();})
         .then(function(data) {console.log(data)})
         .catch(function(err) {console.log(err)});
     }
