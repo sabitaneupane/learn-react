@@ -2,23 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-const Home = () => {
-  return (
-    <div> Home page </div>
-  );
-}
+import Home from "./component/home";
+import About from "./component/about";
+import Contact from "./component/contact";
 
-const About = () => {
-  return (
-    <div> About page </div>
-  );
-}
+// const Home = () => {
+//   return (
+//     <div> Home page </div>
+//   );
+// }
 
-const Contact = () => {
-  return (
-    <div> Contact page </div>
-  );
-}
+// const About = () => {
+//   return (
+//     <div> About page </div>
+//   );
+// }
+
+// const Contact = () => {
+//   return (
+//     <div> Contact page </div>
+//   );
+// }
 
 ReactDOM.render(
   <BrowserRouter>
