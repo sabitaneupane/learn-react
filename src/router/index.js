@@ -9,7 +9,7 @@ import Contact from "./component/contact";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Route path="/home" component={Home}/>
+    <Route path="/" component={Home} exact={true} />
     <Route path="/about" component={About}/>
     <Route path="/contact" component={Contact}/>
   </BrowserRouter>, 
