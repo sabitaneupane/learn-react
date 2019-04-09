@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import '../node_modules/jquery/dist/jquery.min.js';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import * as serviceWorker from './serviceWorker';
 
 // import App from './App';
 
@@ -37,13 +38,9 @@ import './index.css';
 // import DeleteData from './axios/deletedata';
 
 // import './router/';
-import './nestedroutes/';
+// import './nestedroutes/';
 
-// import NestedRoute from './router/component/nestedRoute';
-
-
-import * as serviceWorker from './serviceWorker';
-
+import Counterwithhooks from './hooksexamples/counterwithhooks';
 
 
 // If you want your app to work offline and load faster, you can change
