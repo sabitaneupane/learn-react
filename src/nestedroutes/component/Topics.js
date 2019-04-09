@@ -94,12 +94,12 @@ function Topic({match}){
         <ul>
           {topic.resources.map((resource) => (
             <li key={resource.id}>
-              <Link to={`/topics/${topicId}/${resource.id}`}>{resource.name}</Link>
+              <Link to={`${match.url}/${resource.id}`}>{resource.name}</Link>
             </li>
           ))}
         </ul>
       </div>
-      <Route path={`/topics/:topicId/:resourceId`} component={Resources} />
+      <Route path={`${match.path}/:resourceId`} component={Resources} />
     </div>
   )
 }
@@ -114,11 +114,11 @@ function Topics ({match}) {
         <ul>
           {topics.map((topic) => (
             <li key={topic.id}>
-              <Link to={`/topics/${topic.id}`}>{topic.name}</Link>
+              <Link to={`${match.url}/${topic.id}`}>{topic.name}</Link>
             </li>
           ))}
         </ul>
-        <Route path={`/topics/:topicId`} component={Topic}/>
+        <Route path={`${match.path}/:topicId`} component={Topic}/>
       </div>
     </div>
   )
