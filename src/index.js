@@ -36,7 +36,10 @@ import './index.css';
 // import UpdateData from './axios/updatedata';
 // import DeleteData from './axios/deletedata';
 
-import './router/';
+// import './router/';
+import './nestedroutes/';
+
+// import NestedRoute from './router/component/nestedRoute';
 
 
 import * as serviceWorker from './serviceWorker';
